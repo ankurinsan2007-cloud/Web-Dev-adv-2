@@ -163,7 +163,18 @@
 // console.log("second line");
 // console.log("second line");
 
+console.log("starting homework....");
+setTimeout(() => {
+    console.log("homewoerk done!!");
+    console.log("starting dinner....");
+    setTimeout(() => {
+        console.log("dinner done!!");
+        console.log("getting ready to go out");
+        
+        setTimeout(() => {
+            console.log("i am ready to go out");
+        }, 3000);
+        }, 3000);
 
-
-consol.log
+}, 3000);
 
