@@ -163,18 +163,68 @@
 // console.log("second line");
 // console.log("second line");
 
-console.log("starting homework....");
-setTimeout(() => {
-    console.log("homewoerk done!!");
-    console.log("starting dinner....");
-    setTimeout(() => {
-        console.log("dinner done!!");
-        console.log("getting ready to go out");
+//console.log("starting homework....");
+//setTimeout(() => {
+    //console.log("homewoerk done!!");
+   // console.log("starting dinner....");
+   // setTimeout(() => {
+   //     console.log("dinner done!!");
+ //       console.log("getting ready to go out");
         
-        setTimeout(() => {
-            console.log("i am ready to go out");
-        }, 3000);
-        }, 3000);
+        //setTimeout(() => {
+      //      console.log("i am ready to go out");
+    //    }, 3000);
+  //      }, 3000);
+//
+//}, 3000);
 
-}, 3000);
+//function finishHomework( callback) {
+//console. log( "Starting homework...");
+//setTimeout(() => {
+//console. log( "Homework done!");
+//callback();
+//}, 2000);
+//}
+//function eatDinner( callback) {
+//console.log( "Starting dinner..."); setTimeout( () =>
+//{
+//console. log( "Dinner done!");
+//callback();
+//}, 1500);
+//}
+//function goToPlayground() {
+//console. log( "Going to the playground!");
+//}
+
+const p=new Promise((res,rej) => {
+    let done=false
+    setTimeout(() => {
+      if(done){
+        res("it is done")
+      }
+      else{
+        rej("not done")
+      }
+    }, 3000)
+})
+console.log(p)
+
+
+doHomework().then((msg) => {
+  console.log(msg)
+  return eatDinner()
+}).then((msg) => {
+  console.log(msg)
+}).catch((err) => {
+  console.log(err)
+}).finally(() => {
+  console.log("go to sleep")
+})
+
+
+
+
+
+
+
 
