@@ -242,3 +242,18 @@
 //console.log(gen.next());
 //console.log(gen.next());
 
+//function add(a){
+    //return function(b){
+        //return function(c){
+        //    return a + b + c;
+      //  }
+    //}
+  //}
+
+//const first = add(1);
+//console.log(first)
+//const second = first(2);
+//console.log(second)
+//const third = second(3);
+//console.log(third)
+//console.log(third(4));
