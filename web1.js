@@ -196,30 +196,30 @@
 //console. log( "Going to the playground!");
 //}
 
-const p=new Promise((res,rej) => {
-    let done=false
-    setTimeout(() => {
-      if(done){
-        res("it is done")
-      }
-      else{
-        rej("not done")
-      }
-    }, 3000)
-})
-console.log(p)
+//const p=new Promise((res,rej) => {
+    //let done=false
+   // setTimeout(() => {
+      //if(done){
+       // res("it is done")
+     // }
+     // else{
+    //    rej("not done")
+  //    }
+//    }, 3000)
+//})
+//console.log(p)
 
 
-doHomework().then((msg) => {
-  console.log(msg)
-  return eatDinner()
-}).then((msg) => {
-  console.log(msg)
-}).catch((err) => {
-  console.log(err)
-}).finally(() => {
-  console.log("go to sleep")
-})
+//doHomework().then((msg) => {
+//  console.log(msg)
+//  return eatDinner()
+//}).then((msg) => {
+//  console.log(msg)
+//}).catch((err) => {
+//  console.log(err)
+//}).finally(() => {
+//  console.log("go to sleep")
+//})
 
 
 
