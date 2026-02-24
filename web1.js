@@ -257,3 +257,4 @@
 //const third = second(3);
 //console.log(third)
 //console.log(third(4));
+//console.log(add(1)(2)(3));
