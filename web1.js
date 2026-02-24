@@ -221,10 +221,24 @@
 //  console.log("go to sleep")
 //})
 
+//document.cookie="name=John; expires=Fri, 31 Dec 2023 23:59:59 GMT; path=/";
+//document.cookie="age=30; expires=Fri, 31 Dec 2023 23:59:59 GMT; path=/";
+//console.log(document.cookie); 
 
-
-
-
-
-
+//function* generate(){
+    //yield 1;
+   // yield 2;
+    //yield 3;
+  //  let index=4;
+//    while(true){
+      //  yield index++;
+    //    index++;
+  //  }
+//}
+//const gen = generate();
+//console.log(gen);
+//console.log(gen.next());
+//console.log(gen.next());
+//console.log(gen.next());
+//console.log(gen.next());
 
